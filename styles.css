@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Inter:wght@500&family=Libertinus+Sans:wght@400;700&display=swap');
 
-:root { --ink:#070e3f; --sky:#57d4db; --orange:#ff751f; --pink:#db2174; --paper:#f6f6f1; --line:rgba(7,14,63,.22); --display:'Space Grotesk',Helvetica,sans-serif; --body:'DM Sans',Helvetica,sans-serif; --mono:'DM Mono',monospace; }
+:root { --ink:#070e3f; --sky:#57d4db; --orange:#ff751f; --pink:#db2174; --paper:#f6f6f1; --line:rgba(7,14,63,.22); --display:'Libertinus Sans',Helvetica,sans-serif; --body:'DM Sans',Helvetica,sans-serif; --subtitle:'Inter',Helvetica,sans-serif; --mono:'DM Mono',monospace; }
 * { box-sizing:border-box; }
 html { scroll-behavior:smooth; }
 body { margin:0; color:var(--ink); background:var(--paper); font-family:var(--body); font-size:16px; line-height:1.55; }
@@ -198,3 +198,18 @@ a { color:inherit; text-decoration:none; }
 .services-cta-secondary { border:1px solid var(--ink); color:var(--ink); }
 .services-cta-secondary:hover { background:var(--ink); color:var(--paper); }
 @media (max-width:800px) { .services-overview,.collaboration-options,.services-contact-cta { padding:68px 8vw; }.services-heading,.collaboration-heading,.services-contact-cta { align-items:start; display:block; }.services-heading { margin-bottom:46px; }.services-heading .small-caps { margin-bottom:26px; }.service-offerings { grid-template-columns:1fr; }.service-offerings article { min-height:0; padding:18px 24px 20px; }.service-offerings p,.collaboration-grid p { font-size:16px; }.collaboration-heading p { margin-top:26px; }.collaboration-grid { gap:38px; grid-template-columns:1fr; margin-top:50px; padding-top:25px; }.collaboration-grid h3 { margin:18px 0 12px; }.services-contact-cta p { margin-top:22px; }.services-cta-links { margin-top:42px; }.services-cta-links a { display:inline-block; width:max-content; } }
+
+/* Libertinus Sans title treatment */
+.hero h1,.about h1,.about h2,.skills h2,.experience h2,.portfolio-band h2,.contact h2,
+.brand-mark,.portrait-tag,.service-card h3,.work-process h2,.process-step h3,
+.meeting-cta h2,.services-page .skills-header h1,.portfolio-page h1,
+.services-heading h1,.collaboration-heading h2,.services-contact-cta h2,
+.service-offerings h2,.collaboration-grid h3 { font-weight:700; }
+
+/* Subtitle and supporting-copy treatment */
+.hero-intro,.hero-description,.hero-description-band p,.service-question,
+.experience-intro,.portfolio-page-intro,.about-copy .lead,
+.collaboration-heading p,.services-contact-cta p {
+  font-family:var(--subtitle);
+  font-weight:500;
+}
